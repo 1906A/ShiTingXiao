@@ -6,10 +6,30 @@ public class SearchRequest {
 
     private Integer page; //当前页
 
+    private String sortBy; //新品
 
-    private static final Integer DEFAULT_SIZE=20; //每页大小,不从页面接受,而是固定大小
-    private static final Integer DEFAULT_PAGE=1; //默认页
+    private Boolean descending;
 
+
+    private static final Integer DEFAULT_SIZE = 20; //每页大小,不从页面接受,而是固定大小
+    private static final Integer DEFAULT_PAGE = 1; //默认页
+
+
+    public String getSortBy() {
+        return sortBy;
+    }
+
+    public void setSortBy(String sortBy) {
+        this.sortBy = sortBy;
+    }
+
+    public Boolean getDescending() {
+        return descending;
+    }
+
+    public void setDescending(Boolean descending) {
+        this.descending = descending;
+    }
 
     public String getKey() {
         return key;
@@ -20,11 +40,11 @@ public class SearchRequest {
     }
 
     public Integer getPage() {
-        if (page == null){
+        if (page == null) {
             return DEFAULT_PAGE;
         }
         //获取页面时做一些校验,不能小于1
-        return Math.max(DEFAULT_PAGE,page);
+        return Math.max(DEFAULT_PAGE, page);
     }
 
     public void setPage(Integer page) {

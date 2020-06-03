@@ -21,6 +21,7 @@ public class BrandService {
      * 1. 使用pageHelper
      * 2. 手写sql分页 limit关键字
      * 3. 通用Mapper Excempe 条件构造器 用java代码封装sql语句
+     *
      * @param key
      * @param page
      * @param rows
@@ -30,18 +31,19 @@ public class BrandService {
      */
     public PageResult<Brand> findBrand(String key, Integer page, Integer rows, String sortBy, boolean desc) {
         // PageHelper
-        PageHelper.startPage(page,rows);
+        PageHelper.startPage(page, rows);
 
-        List<Brand> brandList=brandMapper.findBrand(key,sortBy,desc);
+        List<Brand> brandList = brandMapper.findBrand(key, sortBy, desc);
 
         PageInfo<Brand> brandPageInfo = new PageInfo<>(brandList);
 
-        return new PageResult<Brand>(brandPageInfo.getTotal(),brandPageInfo.getList());
+        return new PageResult<Brand>(brandPageInfo.getTotal(), brandPageInfo.getList());
     }
 
     /**
-     *  手写limit sql
-     *  分页公式 (page-1)*rows , rows
+     * 手写limit sql
+     * 分页公式 (page-1)*rows , rows
+     *
      * @param key
      * @param page
      * @param rows
@@ -53,13 +55,13 @@ public class BrandService {
         // PageHelper
 
         //查询指定分页信息
-        List<Brand> brandList=brandMapper.findBrandLimit(key,(page-1)*rows,rows,sortBy,desc);
+        List<Brand> brandList = brandMapper.findBrandLimit(key, (page - 1) * rows, rows, sortBy, desc);
 
         //total总页数
-        Long total =brandMapper.findBrandCount(key,sortBy,desc);
+        Long total = brandMapper.findBrandCount(key, sortBy, desc);
 
 
-        return new PageResult<Brand>(total,brandList);
+        return new PageResult<Brand>(total, brandList);
     }
 
     public void addOrEditBrand(Brand brand) {
@@ -68,8 +70,8 @@ public class BrandService {
 
 
     public void addBrandAndCategory(Long id, List<String> cids) {
-        cids.forEach(cid ->{
-            brandMapper.addBrandAndCategory(id,Long.parseLong(cid));
+        cids.forEach(cid -> {
+            brandMapper.addBrandAndCategory(id, Long.parseLong(cid));
         });
     }
 
@@ -94,13 +96,23 @@ public class BrandService {
         brandMapper.updateByPrimaryKey(brand);
         // 2: 修改品牌和商品关联表
         brandMapper.deleteBrandAndCategoryById(brand.getId());
-        cids.forEach(cid ->{
-            brandMapper.addBrandAndCategory(brand.getId(),Long.parseLong(cid));
+        cids.forEach(cid -> {
+            brandMapper.addBrandAndCategory(brand.getId(), Long.parseLong(cid));
         });
 
     }
 
     public List<Brand> findBrandByCid(Long cid) {
         return brandMapper.findBrandByCid(cid);
+    }
+
+    /**
+     * 根据品牌id查询品牌信息
+     *
+     * @param id
+     * @return
+     */
+    public Brand findById(Long id) {
+        return brandMapper.selectByPrimaryKey(id);
     }
 }
