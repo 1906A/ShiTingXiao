@@ -2,8 +2,541 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4ddc311-15f3-4498-be9f-36c3a7cb9f1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../leyou/readme/day6.1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/artifacts/day426_test_import_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/artifacts/day426_test_import_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/bigcourse.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/dataSources/f839e873-e321-4f01-bde0-394965fa381d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_baomidou_mybatis_plus_3_3_1_tmp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_3_1_tmp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_3_1_tmp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_3_1_tmp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_3_1_tmp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_guava_guava_16_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_inject_guice_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_ribbon_ribbon_eureka_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_codehaus_jettison_jettison_1_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_beans_5_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_context_support_5_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_core_5_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_jcl_5_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_test_5_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_tx_5_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day423-peizhi/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day423-peizhi/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day423-peizhi/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day423-peizhi/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/Day426DevtoolsMybatispulsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/mapper/CityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/mapper/ShengMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/pojo/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/pojo/Sheng.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/service/CityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/service/ShengService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/service/impl/CityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/java/cn/service/impl/ShengServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/resources/mappers/CityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/resources/mappers/ShengMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-devtools-mybatispuls/src/test/java/cn/Day426DevtoolsMybatispulsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/main/java/cn/Day426TestImportApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/main/java/cn/jiyun/controller/EmpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/main/java/cn/jiyun/mapper/EmpMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/main/java/cn/jiyun/pojo/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/main/java/cn/jiyun/pojo/Emp.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/main/java/cn/jiyun/service/EmpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/main/resources/mapper/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/main/resources/templates/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day426-test-import/src/test/java/cn/Day426TestImportApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/Day427TaskApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/mapper/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/pojo/Teacher.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/pojo/User.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/service/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/java/cn/jiyun/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/resources/mappers/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day427-task/src/test/java/cn/jiyun/Day427TaskApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/src/main/java/cn/jiyun/Day428HttpclientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/src/main/java/cn/jiyun/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/src/main/java/cn/jiyun/httpclient/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/src/main/java/cn/jiyun/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/src/main/java/cn/jiyun/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-httpclient/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/src/main/java/cn/jiyun/Day428SpringcloudConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/src/main/java/cn/jiyun/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/src/main/java/cn/jiyun/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/src/main/java/cn/jiyun/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-consumer/src/test/java/cn/jiyun/Day428SpringcloudConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/main/java/cn/jiyun/Day428SpringcloudProducer01Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/main/java/cn/jiyun/controller/TeaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/main/java/cn/jiyun/mapper/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/main/java/cn/jiyun/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/main/java/cn/jiyun/service/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/main/java/cn/jiyun/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/main/resources/4.28作业.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/main/resources/mappers/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer-01/src/test/java/cn/jiyun/Day428SpringcloudProducerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/java/cn/jiyun/Day428SpringcloudProducerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/java/cn/jiyun/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/java/cn/jiyun/controller/TeaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/java/cn/jiyun/mapper/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/java/cn/jiyun/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/java/cn/jiyun/service/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/java/cn/jiyun/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/resources/4.28作业.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/resources/application-one.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/resources/application-two.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/main/resources/mappers/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day428-springcloud-producer/src/test/java/cn/jiyun/Day428SpringcloudProducerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/src/main/java/cn/jiyun/Day429Eureka01Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/src/main/resources/application-one.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/src/main/resources/application-two.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/src/main/resources/总结.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-01/src/test/java/cn/jiyun/Day429Eureka01ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/src/main/java/cn/jiyun/Day429Eureka02Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/src/main/resources/服务集群.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-eureka-02/src/test/java/cn/jiyun/Day429Eureka02ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/src/main/java/cn/jiyun/Day429SpringcloudConsumerRibbonApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/src/main/java/cn/jiyun/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/src/main/java/cn/jiyun/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/src/main/java/cn/jiyun/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/src/main/java/cn/jiyun/service/MyFigen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/src/main/java/cn/jiyun/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/src/main/resources/4.29日理论.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day429-springcloud-consumer-ribbon/src/test/java/cn/jiyun/Day428SpringcloudConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/src/main/java/cn/jiyun/Day506IntegrationConsumerZuulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/src/main/java/cn/jiyun/controller/StuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/src/main/java/cn/jiyun/service/StuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/src/main/resources/templates/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-consumer-zuul/src/main/resources/需求.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-eureka/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-eureka/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-eureka/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-eureka/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-eureka/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-eureka/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-eureka/src/main/java/cn/jiyun/Day506IntegrationEurekaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-eureka/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/main/java/cn/jiyun/Day506IntegrationProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/main/java/cn/jiyun/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/main/java/cn/jiyun/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/main/java/cn/jiyun/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/main/java/cn/jiyun/pojo/Student.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/main/java/cn/jiyun/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/main/java/cn/jiyun/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/main/resources/mappers/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-integration-provider/src/test/java/cn/jiyun/Day506IntegrationProviderApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/src/main/java/cn/jiyun/Day506ZuulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/src/main/resources/5.6作业.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/src/main/resources/application-four.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/src/main/resources/application-one.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/src/main/resources/application-three.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/src/main/resources/application-two.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day506-zuul/src/test/java/cn/jiyun/Day506ZuulApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/fastdfs-client.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/fdfs_client.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/src/main/java/org/csource/common/Base64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/src/main/java/org/csource/common/IniFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-item/ly-item-interface/src/main/java/com/leyou/client/BrandClienService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-item/ly-item-interface/src/main/java/com/leyou/client/CategoryClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-searchsever/src/main/java/com/leyou/search/client/BrandClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-searchsever/src/main/java/com/leyou/search/client/CategoryClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-searchsever/src/main/java/com/leyou/search/pojo/SearchResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/readme/7.分类和品牌前台分析.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/readme/8.分类和品牌后台实现.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/readme/日报.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/src/main/resources/js/MyDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/src/main/resources/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/src/main/resources/js/vuejs-2.5.16.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/src/main/resources/page/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/src/main/resources/page/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stu-tea-517/src/test/java/cn/jiyun/stutea517/StuTea517ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/.idea/dataSources/434daa99-a8dc-4540-83a9-3413cd4c9440.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/TeacherApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/mapper/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/service/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/java/cn/jiyun/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/resources/mappers/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/resources/mappers/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/resources/static/js/MyDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/resources/static/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/resources/static/js/vuejs-2.5.16.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/resources/static/page/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/resources/static/page/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/src/main/resources/static/page/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/TeacherApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/controller/StudentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/mapper/StudentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/mapper/TeacherMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/pojo/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/pojo/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/service/TeacherService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/cn/jiyun/service/impl/TeacherServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/mappers/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/mappers/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/static/js/MyDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/static/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/static/js/vuejs-2.5.16.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/static/page/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/static/page/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../teacher/target/classes/static/page/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/compiler/codegen/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/compiler/codegen/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/compiler/create-compiler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/compiler/directives/bind.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/compiler/directives/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/compiler/directives/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/compiler/directives/on.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/compiler/parser/filter-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/compiler/parser/html-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/components/keep-alive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/global-api/assets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/global-api/extend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/global-api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/inject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/lifecycle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/proxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/bind-dynamic-keys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/bind-object-listeners.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/bind-object-props.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/check-keycodes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/render-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/render-slot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/render-static.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/resolve-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/resolve-scoped-slots.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render-helpers/resolve-slots.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/render.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/instance/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/observer/array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/observer/dep.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/observer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/observer/scheduler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/observer/traverse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/observer/watcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/util/debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/util/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/util/error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/util/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/util/lang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/util/next-tick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/util/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/util/perf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/util/props.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/create-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/create-element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/create-functional-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/helpers/extract-props.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/helpers/get-first-component-child.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/helpers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/helpers/is-async-placeholder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/helpers/merge-hook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/helpers/normalize-children.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/helpers/normalize-scoped-slots.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/helpers/resolve-async-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/helpers/update-listeners.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/modules/directives.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/modules/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/modules/ref.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/patch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/core/vdom/vnode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/runtime/class-util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/runtime/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/runtime/node-ops.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/runtime/patch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/server/compiler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/server/directives/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/server/directives/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/server/directives/show.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/server/modules/attrs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/server/modules/class.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/server/modules/dom-props.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/server/modules/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/platforms/web/server/modules/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/bundle-renderer/create-bundle-renderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/bundle-renderer/create-bundle-runner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/bundle-renderer/source-map-support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/create-renderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/optimizing-compiler/codegen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/optimizing-compiler/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/optimizing-compiler/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/optimizing-compiler/optimizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/optimizing-compiler/runtime-helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/render-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/render-stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/render.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/template-renderer/create-async-file-mapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/template-renderer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/template-renderer/parse-template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/template-renderer/template-stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/webpack-plugin/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/webpack-plugin/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/webpack-plugin/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/server/write.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/sfc/parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/shared/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/shared/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vueDemo/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/ly-item/ly-item-service/src/main/java/com/leyou/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-item/ly-item-service/src/main/java/com/leyou/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/ly-item/ly-item-service/src/main/java/com/leyou/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-item/ly-item-service/src/main/java/com/leyou/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/ly-item/ly-item-service/src/main/java/com/leyou/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-item/ly-item-service/src/main/java/com/leyou/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/ly-item/ly-item-service/src/main/java/com/leyou/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-item/ly-item-service/src/main/java/com/leyou/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/ly-searchsever/src/main/java/com/leyou/search/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-searchsever/src/main/java/com/leyou/search/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/ly-searchsever/src/main/java/com/leyou/search/pojo/SearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-searchsever/src/main/java/com/leyou/search/pojo/SearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/readme/day6.1.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,41 +561,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="354" column="47" selection-start-line="354" selection-start-column="47" selection-end-line="354" selection-end-column="47" />
+            <state relative-caret-position="-14">
+              <caret line="507" column="50" selection-start-line="507" selection-start-column="50" selection-end-line="507" selection-end-column="50" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#0;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#1;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#1;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#5;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#1;n#div#5;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#6;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -80,6 +605,8 @@
     <findStrings>
       <find>goods</find>
       <find>searchApp</find>
+      <find>top-pag</find>
+      <find>品牌</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,28 +644,24 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1247" />
-    <option name="y" value="41" />
-    <option name="width" value="782" />
-    <option name="height" value="868" />
+    <option name="x" value="452" />
+    <option name="y" value="117" />
+    <option name="width" value="1083" />
+    <option name="height" value="849" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../leyou" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -180,7 +703,12 @@
       <workItem from="1590938351864" duration="1330000" />
       <workItem from="1590980269774" duration="1801000" />
       <workItem from="1591006139386" duration="1175000" />
-      <workItem from="1591021008189" duration="4874000" />
+      <workItem from="1591021008189" duration="5189000" />
+      <workItem from="1591057151989" duration="4272000" />
+      <workItem from="1591068730320" duration="1746000" />
+      <workItem from="1591076097049" duration="1460000" />
+      <workItem from="1591167075530" duration="3964000" />
+      <workItem from="1591199182345" duration="801000" />
     </task>
     <task id="LOCAL-00001" summary="leyou前台创建">
       <created>1590762101071</created>
@@ -196,17 +724,23 @@
       <option name="project" value="LOCAL" />
       <updated>1591006352034</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="leyou前台搜索(6月1日)">
+      <created>1591026349359</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591026349359</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15156000" />
+    <option name="totallyTimeSpent" value="27714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25531915" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.66897506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -223,7 +757,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.22125813" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.22125813" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.22125813" />
       <window_info anchor="bottom" id="Problems" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -244,7 +778,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="leyou前台创建" />
     <MESSAGE value="leyou前台搜索" />
-    <option name="LAST_COMMIT_MESSAGE" value="leyou前台搜索" />
+    <MESSAGE value="leyou前台搜索(6月1日)" />
+    <option name="LAST_COMMIT_MESSAGE" value="leyou前台搜索(6月1日)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pay.html">
@@ -268,13 +803,6 @@
         <state relative-caret-position="-528" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -282,22 +810,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="354" column="47" selection-start-line="354" selection-start-column="47" selection-end-line="354" selection-end-column="47" />
+        <state relative-caret-position="-14">
+          <caret line="507" column="50" selection-start-line="507" selection-start-column="50" selection-end-line="507" selection-end-column="50" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#5;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />

@@ -101,7 +101,6 @@
     <!--list-content-->
     <div class="main">
         <div class="py-container">
-
             <div class="bread">
                 <!--面包屑-->
                 <ul class="fl sui-breadcrumb">
@@ -124,42 +123,23 @@
             </div>
             <!--selector-->
             <div class="clearfix selector">
-                <div class="type-wrap">
-                    <div class="fl key">分类</div>
+                <div class="type-wrap" v-for="f in filters" v-show="f.key=='分类'">
+                    <div class="fl key">{{f.key}}</div>
                     <div class="fl value">
-                        <ul class="type-list">
+                        <ul class="type-list" v-for="opt in f.options">
                             <li>
-                                <a>手机</a>
-                            </li>
-                            <li>
-                                <a>儿童手表</a>
+                                <a>{{opt.name}}</a>
                             </li>
                         </ul>
                     </div>
                     <div class="fl ext"></div>
                 </div>
-                <div class="type-wrap logo">
-                    <div class="fl key brand">品牌</div>
+                <div class="type-wrap logo" v-for="f in filters" v-show="f.key=='品牌'">
+                    <div class="fl key brand">{{f.key}}</div>
                     <div class="value logos">
                         <ul class="logo-list">
-                            <li><img src="img/_/phone01.png"/></li>
-                            <li><img src="img/_/phone02.png"/></li>
-                            <li><img src="img/_/phone03.png"/></li>
-                            <li><img src="img/_/phone04.png"/></li>
-                            <li><img src="img/_/phone05.png"/></li>
-                            <li><img src="img/_/phone06.png"/></li>
-                            <li><img src="img/_/phone07.png"/></li>
-                            <li><img src="img/_/phone08.png"/></li>
-                            <li><img src="img/_/phone09.png"/></li>
-                            <li><img src="img/_/phone10.png"/></li>
-                            <li><img src="img/_/phone11.png"/></li>
-                            <li><img src="img/_/phone12.png"/></li>
-                            <li><img src="img/_/phone13.png"/></li>
-                            <li><img src="img/_/phone14.png"/></li>
-                            <li><img src="img/_/phone05.png"/></li>
-                            <li><img src="img/_/phone06.png"/></li>
-                            <li><img src="img/_/phone07.png"/></li>
-                            <li style="text-align: center"><a style="line-height: 30px; font-size: 12px" href="#">黑马</a>
+                            <li  v-for="opt in f.options"><img :src="opt.image" v-show="opt.image!=''"/></li>
+                            <li  v-for="opt in f.options" style="text-align: center" v-show="opt.image==''"><a style="line-height: 30px; font-size: 12px" href="#">{{opt.name}}</a>
                             </li>
                         </ul>
                     </div>
@@ -291,7 +271,8 @@
                             <li>
                                 <a href="#">销量</a>
                             </li>
-                            <li>
+                            <li @click="orderBy('createTime')"
+                                :class="{active:search.sortBy === 'createTime'}">
                                 <a href="#">新品</a>
                             </li>
                             <li>
@@ -302,10 +283,10 @@
                             </li>
                         </ul>
                         <div class="top-pagination">
-                            <span>共 <i style="color: #222;">7600+</i> 商品</span>
-                            <span><i style="color: red;">2</i>/123</span>
-                            <a class="btn-arrow" href="#" style="display: inline-block">&lt;</a>
-                            <a class="btn-arrow" href="#" style="display: inline-block">&gt;</a>
+                            <span>共 <i style="color: #222;">{{total}}</i> 商品</span>
+                            <span><i style="color: red;">{{search.page}}</i>/{{totalPage}}</span>
+                            <a class="btn-arrow" href="#" style="display: inline-block" @click="prePage">&lt;</a>
+                            <a class="btn-arrow" href="#" style="display: inline-block" @click="nextPage">&gt;</a>
                         </div>
                     </div>
                 </div>
@@ -316,7 +297,8 @@
                                 <div class="p-img">
                                     <a href="item.html" target="_blank"><img :src="item.selected.images" height="200"/></a>
                                     <ul class="skus">
-                                        <li :class="{selected:item.selected.id == sku.id}" v-for="sku in item.skus" @click="item.selected=sku"><img :src="sku.images"></li>
+                                        <li :class="{selected:item.selected.id == sku.id}" v-for="sku in item.skus"
+                                            @click="item.selected=sku"><img :src="sku.images"></li>
                                     </ul>
                                 </div>
                                 <div class="clearfix"></div>
@@ -327,10 +309,12 @@
                                     </strong>
                                 </div>
                                 <div class="attr" :title="item.selected.title">
-                                    <em>{{item.selected.title.length >20 ? item.selected.title.substring(0,20) : item.selected.title}}</em>
+                                    <em>{{item.selected.title.length >20 ? item.selected.title.substring(0,20) :
+                                        item.selected.title}}</em>
                                 </div>
                                 <div class="cu">
-                                    <em><span>促</span>{{item.subTitle.length >15 ? item.subTitle.substring(0,15) : item.subTitle}}</em>
+                                    <em><span>促</span>{{item.subTitle.length >15 ? item.subTitle.substring(0,15) :
+                                        item.subTitle}}</em>
                                 </div>
                                 <div class="commit">
                                     <i class="command">已有2000人评价</i>
@@ -348,22 +332,23 @@
                 <div class="fr">
                     <div class="sui-pagination pagination-large">
                         <ul>
-                            <li class="prev disabled">
-                                <a href="#">«上一页</a>
+                            <li class="prev disabled" :class="{disable:search.page == 1}">
+                                <a @click="prePage">«上一页</a>
                             </li>
-                            <li class="active" v-for="i in Math.min(5,totalPage)">
-                                <a href="#">{{i}}</a>
+                            <li :class="{active:search.page == index(i)}" v-for="i in Math.min(5,totalPage)"
+                                @click="search.page=index(i)">
+                                <a href="#">{{index(i)}}</a>
                             </li>
 
                             <li class="dotted"><span>...</span></li>
-                            <li class="next">
-                                <a href="#">下一页»</a>
+                            <li class="next" :class="{disable:search.page == totalPage}">
+                                <a @click="nextPage">下一页»</a>
                             </li>
                         </ul>
                         <div><span>共10页&nbsp;</span><span>
       到第
-      <input type="text" class="page-num">
-      页 <button class="page-confirm" onclick="alert(1)">确定</button></span></div>
+      <input type="text" class="page-num" v-model="search.page">
+      页 <button class="page-confirm" @click="gotoPage">确定</button></span></div>
                     </div>
                 </div>
             </div>
@@ -465,31 +450,89 @@
                 key: "",
                 page: 1
             },
-            goodsList:[],
-            total:0, //总条数
-            totalPage:0 //总页数
+            goodsList: [],
+            total: 0, //总条数
+            totalPage: 0, //总页数
+            filters:[]
         }, methods: {
+            orderBy(createTime) {
+                this.search.sortBy = createTime;
+                this.search.descending = !this.search.descending;
+                this.initData();
+            },
+            gotoPage() {
+                this.initData();
+            },
+            prePage() {
+                if (this.search.page > 1) {
+                    this.search.page--;
+                }
+
+            }, nextPage() {
+                if (this.search.page < this.totalPage) {
+                    this.search.page++;
+                }
+
+            },
+            index(i) {
+                if (this.search.page <= 3 || this.totalPage <= 5) {
+                    //如果当前页小于等于3 或者总页数小于等于5
+                    return i;
+                } else if (this.search.page > 3 && this.search.page <= this.totalPage - 3) {
+                    //如果当前页大于3
+                    return this.search.page - 3 + i;
+                } else if (this.search.page > this.totalPage - 3) {
+                    return this.totalPage - 5 + i;
+                }
+            },
             initData() {
                 ly.http.post("/search/search/page", this.search)
                     .then(({data}) => {
-                       // console.info(data);
-                        data.items.forEach(item =>{
-                            item.skus=JSON.parse(item.skus);//字符串解析成为对象
-                            item.selected=item.skus[0];
-                           //this.goodsList.selected=item.skus[0];
+                        // console.info(data);
+                        data.items.forEach(item => {
+                            item.skus = JSON.parse(item.skus);//字符串解析成为对象
+                            item.selected = item.skus[0];
+                            //this.goodsList.selected=item.skus[0];
                         });
-                        this.goodsList=data.items;
-                        this.total=data.total;
-                        this.totalPage=data.totalPage;
+                        this.goodsList = data.items;
+                        this.total = data.total;
+                        //this.search.page=9;
+                        this.totalPage = data.totalPage;
+
+                        //获取categoryList  和 brandList
+                        this.filters.push({
+                            key:"分类",
+                            options:data.categoryList
+                        }),this.filters.push({
+                            key:"品牌",
+                            options:data.brandList
+                        })
                     }).catch(error => {
 
                 });
             }
         }, created() {
             const search = ly.parse(location.search.substring(1));
+            if (location.search.substring(1).indexOf("page") == -1) {
+                search.page = 1;
+            }
             this.search = search;
-            this.search.page=1;
+            this.search.sortBy = "createTime";
+            this.search.descending=true;
             this.initData();
+
+        },
+        watch: {
+            search: {
+                deep: true,
+                handler(newVal, oldVal) {
+                    if (!oldVal || !oldVal.key) {
+                        return;
+                    } else {
+                        location.href = location.href.substring(0, location.href.indexOf("?") + 1) + ly.stringify(this.search);
+                    }
+                }
+            }
         },
         components: {
             lyTop: () => import("./js/pages/top.js")
