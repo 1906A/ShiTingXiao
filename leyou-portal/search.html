@@ -123,130 +123,30 @@
             </div>
             <!--selector-->
             <div class="clearfix selector">
-                <div class="type-wrap" v-for="f in filters" v-show="f.key=='分类'">
+                <div class="type-wrap" v-for="(f,index) in filters" v-if="f.key!='品牌'" v-show="index<5 || show">
                     <div class="fl key">{{f.key}}</div>
                     <div class="fl value">
-                        <ul class="type-list" v-for="opt in f.options">
-                            <li>
+                        <ul class="type-list">
+                            <li v-for="opt in f.options" @click="paramSpec(f,opt)">
                                 <a>{{opt.name}}</a>
                             </li>
                         </ul>
                     </div>
                     <div class="fl ext"></div>
                 </div>
-                <div class="type-wrap logo" v-for="f in filters" v-show="f.key=='品牌'">
+                <div class="type-wrap logo" v-else  v-show="index<5 || show">
                     <div class="fl key brand">{{f.key}}</div>
                     <div class="value logos">
                         <ul class="logo-list">
-                            <li  v-for="opt in f.options"><img :src="opt.image" v-show="opt.image!=''"/></li>
-                            <li  v-for="opt in f.options" style="text-align: center" v-show="opt.image==''"><a style="line-height: 30px; font-size: 12px" href="#">{{opt.name}}</a>
+                            <li  v-for="opt in f.options" @click="paramSpec(f,opt)">
+                                <img :src="opt.image" v-show="opt.image!=''"/></li>
+                            <li  v-for="opt in f.options" style="text-align: center" v-show="opt.image==''" @click="paramSpec(f,opt)">
+                                <a style="line-height: 30px; font-size: 12px" href="#">{{opt.name}}</a>
                             </li>
                         </ul>
                     </div>
                     <div class="fl ext">
                         <a href="javascript:void(0);" class="sui-btn">多选</a>
-                    </div>
-                </div>
-                <div class="type-wrap">
-                    <div class="fl key">网络制式</div>
-                    <div class="fl value">
-                        <ul class="type-list">
-                            <li>
-                                <a>GSM（移动/联通2G）</a>
-                            </li>
-                            <li>
-                                <a>电信2G</a>
-                            </li>
-                            <li>
-                                <a>电信3G</a>
-                            </li>
-                            <li>
-                                <a>移动3G</a>
-                            </li>
-                            <li>
-                                <a>联通3G</a>
-                            </li>
-                            <li>
-                                <a>联通4G</a>
-                            </li>
-                            <li>
-                                <a>电信3G</a>
-                            </li>
-                            <li>
-                                <a>移动3G</a>
-                            </li>
-                            <li>
-                                <a>联通3G</a>
-                            </li>
-                            <li>
-                                <a>联通4G</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="fl ext"></div>
-                </div>
-                <div class="type-wrap">
-                    <div class="fl key">显示屏尺寸</div>
-                    <div class="fl value">
-                        <ul class="type-list">
-                            <li>
-                                <a>4.0-4.9英寸</a>
-                            </li>
-                            <li>
-                                <a>4.0-4.9英寸</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="fl ext"></div>
-                </div>
-                <div class="type-wrap">
-                    <div class="fl key">摄像头像素</div>
-                    <div class="fl value">
-                        <ul class="type-list">
-                            <li>
-                                <a>1200万以上</a>
-                            </li>
-                            <li>
-                                <a>800-1199万</a>
-                            </li>
-                            <li>
-                                <a>1200-1599万</a>
-                            </li>
-                            <li>
-                                <a>1600万以上</a>
-                            </li>
-                            <li>
-                                <a>无摄像头</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="fl ext"></div>
-                </div>
-                <div class="type-wrap">
-                    <div class="fl key">价格</div>
-                    <div class="fl value">
-                        <ul class="type-list">
-                            <li>
-                                <a>0-500元</a>
-                            </li>
-                            <li>
-                                <a>500-1000元</a>
-                            </li>
-                            <li>
-                                <a>1000-1500元</a>
-                            </li>
-                            <li>
-                                <a>1500-2000元</a>
-                            </li>
-                            <li>
-                                <a>2000-3000元 </a>
-                            </li>
-                            <li>
-                                <a>3000元以上</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="fl ext">
                     </div>
                 </div>
                 <div class="type-wrap" style="text-align: center">
@@ -448,13 +348,32 @@
             ly,
             search: {
                 key: "",
-                page: 1
+                page: 1,
+                filter:{}
             },
             goodsList: [],
             total: 0, //总条数
             totalPage: 0, //总页数
-            filters:[]
+            filters:[],
+            show:false
         }, methods: {
+            paramSpec(f,opt){
+                //动态封装对象
+                //vue中不能动态得到值,通过浅拷贝过度一下
+                let searchTemp={};
+                //新知识点 assign 从一个对象copy到另外一个对象
+                Object.assign(searchTemp,this.search);
+
+                let value=0;
+                if (f.key == "分类" || f.key=="品牌" ){
+                    value= opt.id;
+                } else {
+                    value =opt.name;
+                }
+                searchTemp.filter[f.key] =value;
+                //封装我们的参数
+                this.search =searchTemp;
+            },
             orderBy(createTime) {
                 this.search.sortBy = createTime;
                 this.search.descending = !this.search.descending;
@@ -472,7 +391,6 @@
                 if (this.search.page < this.totalPage) {
                     this.search.page++;
                 }
-
             },
             index(i) {
                 if (this.search.page <= 3 || this.totalPage <= 5) {
@@ -498,7 +416,6 @@
                         this.total = data.total;
                         //this.search.page=9;
                         this.totalPage = data.totalPage;
-
                         //获取categoryList  和 brandList
                         this.filters.push({
                             key:"分类",
@@ -506,6 +423,9 @@
                         }),this.filters.push({
                             key:"品牌",
                             options:data.brandList
+                        })
+                        data.paramList.forEach(p =>{
+                            this.filters.push(p);
                         })
                     }).catch(error => {
 
@@ -516,6 +436,7 @@
             if (location.search.substring(1).indexOf("page") == -1) {
                 search.page = 1;
             }
+            search.filter = search.filter || {};
             this.search = search;
             this.search.sortBy = "createTime";
             this.search.descending=true;
