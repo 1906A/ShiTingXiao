@@ -68,4 +68,8 @@ public class CategoryService {
     public Category findById(Long id) {
         return categoryMapper.selectByPrimaryKey(id);
     }
+
+    public List<Category> findAll() {
+        return categoryMapper.selectAll();
+    }
 }

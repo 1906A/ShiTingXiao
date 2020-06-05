@@ -64,4 +64,18 @@ public class SpecParamController {
         return specParamService.findSpecParamByCidAndSearching(specParam);
     }
 
+
+    /**
+     * 根据cid3和generic查询SpecParam信息
+     *
+     * @param cid
+     * @param generic
+     * @return
+     */
+    @RequestMapping("findSpecParamByCidAndGeneric")
+    public List<SpecParam> findSpecParamByCidAndGeneric(@RequestParam("cid") Long cid,@RequestParam("generic") Integer generic){
+
+        return specParamService.findSpecParamByCidAndGeneric(cid,generic);
+    }
+
 }

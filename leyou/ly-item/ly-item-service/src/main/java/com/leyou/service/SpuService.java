@@ -1,11 +1,9 @@
 package com.leyou.service;
 
 import com.leyou.common.PageResult;
-import com.leyou.dao.SkuMapper;
-import com.leyou.dao.SpuDetailMapper;
-import com.leyou.dao.SpuMapper;
-import com.leyou.dao.StockMapper;
+import com.leyou.dao.*;
 import com.leyou.pojo.Sku;
+import com.leyou.pojo.Spu;
 import com.leyou.pojo.SpuDetail;
 import com.leyou.pojo.Stock;
 import com.leyou.vo.SpuVo;
@@ -19,6 +17,8 @@ import java.util.List;
 @Service
 @Transactional
 public class SpuService {
+    @Autowired
+    private SpuVoMapper spuVoMapper;
     @Autowired
     private SpuMapper spuMapper;
     @Autowired
@@ -47,9 +47,9 @@ public class SpuService {
     }
 
     public PageResult<SpuVo> findSpuBySql(String key, Integer page, Integer rows, Integer saleable) {
-        List<SpuVo> spuList = spuMapper.findSpuByPage(key, (page - 1) * rows, rows, saleable);
+        List<SpuVo> spuList = spuVoMapper.findSpuByPage(key, (page - 1) * rows, rows, saleable);
         // 2:总条数
-        Long count = spuMapper.findSpuCount(key, saleable);
+        Long count = spuVoMapper.findSpuCount(key, saleable);
         //有参构造
         PageResult<SpuVo> result = new PageResult<SpuVo>(count, spuList);
         return result;
@@ -183,5 +183,14 @@ public class SpuService {
         spu.setId(spuId);
         spu.setSaleable(saleable);
         spuMapper.updateByPrimaryKeySelective(spu);
+    }
+    /**
+     * 根据spuId查询spu信息
+     *
+     * @param spuId
+     * @return
+     */
+    public Spu findSpuBySpuId(Long spuId) {
+      return   spuMapper.selectByPrimaryKey(spuId);
     }
 }

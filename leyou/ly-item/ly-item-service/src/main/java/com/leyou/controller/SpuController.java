@@ -1,6 +1,7 @@
 package com.leyou.controller;
 
 import com.leyou.common.PageResult;
+import com.leyou.pojo.Spu;
 import com.leyou.pojo.SpuDetail;
 import com.leyou.service.SpuService;
 import com.leyou.vo.SpuVo;
@@ -73,6 +74,17 @@ public class SpuController {
                          @PathVariable("spuId") Long spuId){
         System.out.println(saleable+"-"+spuId);
         spuService.upOrDown(saleable,spuId);
+    }
+
+    /**
+     * 根据spuId查询spu信息
+     *
+     * @param spuId
+     * @return
+     */
+    @RequestMapping("findSpuBySpuId")
+    public Spu findSpuBySpuId(@RequestParam("spuId") Long spuId){
+        return spuService.findSpuBySpuId(spuId);
     }
 }
 

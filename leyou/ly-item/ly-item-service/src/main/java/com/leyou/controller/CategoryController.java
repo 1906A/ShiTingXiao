@@ -93,4 +93,13 @@ public class CategoryController {
     public Category findById(@RequestParam("id") Long id) {
         return categoryService.findById(id);
     }
+
+    /**
+     * 查询所有信息
+     * @return
+     */
+    @RequestMapping("findAll")
+    public List<Category> findAll(){
+        return categoryService.findAll();
+    }
 }
