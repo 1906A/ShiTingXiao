@@ -8,7 +8,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class GoodsDetailController {
@@ -68,10 +71,22 @@ public class GoodsDetailController {
 
         //5:规格参数详情  cid+generic=0 list
         List<SpecParam> specParamList = specClient.findSpecParamByCidAndGeneric(spu.getCid3(), 0);
-        model.addAttribute("specParamList",specParamList);
+        Map<Long,String> paramMap = new HashMap<>();
+        specParamList.forEach(param ->{
+            paramMap.put(param.getId(),param.getName());
+        });
+        model.addAttribute("paramMap",paramMap);
 
         //6:三级分类 category id name
-        List<Category> categoryList = categoryClient.findAll();
+        List<Category> categoryList =new ArrayList<>();
+       // List<Category> categoryList = categoryClient.findAll()
+        //有spu 可以得到 cid1  cid2  cid3
+        Category cid1Nmae = categoryClient.findById(spu.getCid1());
+        Category cid2Nmae = categoryClient.findById(spu.getCid2());
+        Category cid3Nmae = categoryClient.findById(spu.getCid3());
+        categoryList.add(cid1Nmae);
+        categoryList.add(cid2Nmae);
+        categoryList.add(cid3Nmae);
         model.addAttribute("categoryList",categoryList);
         return "item";
     }
