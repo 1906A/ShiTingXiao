@@ -27,6 +27,8 @@ public class GoodsDetailController {
     private SpecClient specClient;
     @Autowired
     private CategoryClient categoryClient;
+    @Autowired
+    private BrandClient brandClient;
 
     @RequestMapping("hello")
     public String hello(Model model){
@@ -43,6 +45,7 @@ public class GoodsDetailController {
      * 4:规格参数组
      * 5:规格参数详情
      * 6:三级分类
+     * 7:品牌
      *
      * @param model
      * @param spuId
@@ -88,6 +91,12 @@ public class GoodsDetailController {
         categoryList.add(cid2Nmae);
         categoryList.add(cid3Nmae);
         model.addAttribute("categoryList",categoryList);
+
+        //7:品牌  品牌 和标题
+        Brand brand = brandClient.findById(spu.getBrandId());
+        model.addAttribute("brand",brand);
+
+
         return "item";
     }
 }
