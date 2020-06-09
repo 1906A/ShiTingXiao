@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -19,12 +20,29 @@ public class SpecGroupService {
     private SpecParamMapper specParamMapper;
 
     /**
-     * 根据cid查询商品规格组列表
+     * 根据分类cid查询商品规格组列表
+     *
      * @param cid
      * @return
      */
     public List<SpecGroup> findSpecGroupByCid(Long cid){
-        return specGroupMapper.findSpecGroupByCid(cid);
+        //构建查询条件
+        SpecGroup specGroup = new SpecGroup();
+        specGroup.setCid(cid);
+
+        //获取查询结果
+        List<SpecGroup> specGroupList = new ArrayList<>();
+        specGroupList = specGroupMapper.select(specGroup);
+
+        //查询参数组,以及参数组下面的所有信息
+        specGroupList.forEach(group->{
+            SpecParam param = new SpecParam();
+            param.setGroupId(group.getId());
+            List<SpecParam> specParamList = specParamMapper.select(param);
+            group.setParams(specParamList);
+        });
+
+        return specGroupList;
     }
 
     /**

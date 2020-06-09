@@ -2,6 +2,7 @@ package com.leyou.pojo;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.List;
 
 @Table(name="tb_spu_detail")
 public class SpuDetail {
@@ -12,6 +13,16 @@ public class SpuDetail {
     private String genericSpec;// 商品的全局规格属性
     private String packingList;// 包装清单
     private String afterService;// 售后服务
+
+    private List<SpecParam> specParamList;
+
+    public List<SpecParam> getSpecParamList() {
+        return specParamList;
+    }
+
+    public void setSpecParamList(List<SpecParam> specParamList) {
+        this.specParamList = specParamList;
+    }
 
     public Long getSpuId() {
         return spuId;

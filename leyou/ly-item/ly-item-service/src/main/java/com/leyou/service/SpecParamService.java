@@ -2,7 +2,6 @@ package com.leyou.service;
 
 import com.leyou.dao.SpecParamMapper;
 import com.leyou.pojo.SpecParam;
-import org.apache.ibatis.annotations.Select;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -51,6 +50,7 @@ public class SpecParamService {
 
 
     public List<SpecParam> findSpecParamByCidAndGeneric(Long cid, Integer generic) {
+
         return specParamMapper.findSpecParamByCidAndGeneric(cid,generic);
     }
 }
