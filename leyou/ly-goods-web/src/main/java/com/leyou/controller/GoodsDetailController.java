@@ -7,7 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -29,6 +34,8 @@ public class GoodsDetailController {
     private CategoryClient categoryClient;
     @Autowired
     private BrandClient brandClient;
+    @Autowired
+    TemplateEngine templateEngine;
 
     @RequestMapping("hello")
     public String hello(Model model) {
@@ -103,6 +110,52 @@ public class GoodsDetailController {
         model.addAttribute("categoryList", categoryList);
         model.addAttribute("brand", brand);
 
+
+        //2: 写入静态页面文件
+        creatHtml(spu,spuDetail,skuList,specGroupList,paramMap,categoryList,brand);
         return "item";
+    }
+
+    /**
+     * 通过thyemleaf实现页面的静态化
+     *
+     * @param spu
+     * @param spuDetail
+     * @param skuList
+     * @param specGroupList
+     * @param paramMap
+     * @param categoryList
+     * @param brand
+     */
+    private void creatHtml(Spu spu, SpuDetail spuDetail, List<Sku> skuList, List<SpecGroup> specGroupList, Map<Long, String> paramMap, List<Category> categoryList, Brand brand) {
+
+        PrintWriter writer = null;
+        try {
+            // 1:创建上下文
+            Context context = new Context();
+            //2:把数据放入到上下文中
+
+            context.setVariable("spu", spu);
+            context.setVariable("spuDetail", spuDetail);
+            context.setVariable("skuList", skuList);
+            context.setVariable("specGroupList", specGroupList);
+            context.setVariable("paramMap", paramMap);
+            context.setVariable("categoryList", categoryList);
+            context.setVariable("brand", brand);
+            //3:写入文件,写入流
+            File file = new File("D:\\Program Files\\nginx-1.16.1\\html\\"+spu.getId()+".html");
+            writer = new PrintWriter(file);
+
+            //4:执行静态化
+            templateEngine.process("item",context,writer);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }finally {
+            if (writer !=null){
+                //5:关闭写入流
+                writer.close();
+            }
+        }
+
     }
 }
