@@ -27,4 +27,7 @@ public interface SpuClientService {
      */
     @RequestMapping("findSpuBySpuId")
     public Spu findSpuBySpuId(@RequestParam("spuId") Long spuId);
+
+    @RequestMapping("findSpuVoBySpuId")
+    public SpuVo findSpuVoBySpuId(@RequestParam("spuId") Long spuId);
 }

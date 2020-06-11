@@ -10,6 +10,7 @@ import com.leyou.pojo.Sku;
 import com.leyou.pojo.SpecParam;
 import com.leyou.pojo.SpuDetail;
 import com.leyou.search.item.Goods;
+import com.leyou.search.repository.GoodsRepository;
 import com.leyou.vo.SpuVo;
 import org.apache.commons.lang.math.NumberUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,8 @@ public class GoodsService {
     private SpecClientService specClientService;
     @Autowired
     private SpuClientService spuClientService;
+    @Autowired
+    GoodsRepository goodsRepository;
 
     private static  final ObjectMapper MAPPER=new ObjectMapper();
 
@@ -133,4 +136,17 @@ public class GoodsService {
         return result;
     }
 
+    /**
+     * rabbitMQ监听消息,并修改数据
+     * @param spuId
+     */
+    public void editEsData(Long spuId) throws Exception {
+
+        //1: 根据spuId查询spu
+        SpuVo spuVo = spuClientService.findSpuVoBySpuId(spuId);
+        //2:spu转换成goods
+        Goods goods = this.convert(spuVo);
+        //3:持久化es
+        goodsRepository.save(goods);
+    }
 }

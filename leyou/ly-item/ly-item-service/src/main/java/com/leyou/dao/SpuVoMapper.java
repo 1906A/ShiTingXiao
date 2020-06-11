@@ -14,4 +14,6 @@ public interface SpuVoMapper extends Mapper<SpuVo> {
 
     Long findSpuCount(@Param("key") String key,
                       @Param("saleable") Integer saleable);
+
+    SpuVo findSpuVoBySpuId(@Param("spuId") Long spuId);
 }

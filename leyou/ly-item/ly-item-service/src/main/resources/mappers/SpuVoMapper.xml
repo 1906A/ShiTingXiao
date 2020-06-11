@@ -56,4 +56,29 @@
             </if>
         </where>
     </select>
+
+    <!--findSpuVoBySpuId-->
+    <select id="findSpuVoBySpuId" resultType="com.leyou.vo.SpuVo">
+        SELECT s.id,
+               s.title,
+               s.brand_id    as brandId,
+               s.cid1,
+               s.cid2,
+               s.cid3,
+               s.create_time as createTime,
+               b.`name`      AS bname,
+               s.saleable,
+               s.sub_title   as subTitle,
+               CONCAT_WS('/',
+                         (SELECT y1.`name` FROM tb_category y1 WHERE y1.id = s.cid1),
+                         (SELECT y2.`name` FROM tb_category y2 WHERE y2.id = s.cid2),
+                         (SELECT y3.`name` FROM tb_category y3 WHERE y3.id = s.cid3)
+                   )         AS cname
+        FROM tb_spu s,
+             tb_brand b
+        where s.brand_id = b.id
+          and s.valid = 1
+          and s.id = #{spuId}
+    </select>
+
 </mapper>

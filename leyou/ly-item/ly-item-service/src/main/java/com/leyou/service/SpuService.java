@@ -7,6 +7,7 @@ import com.leyou.pojo.Spu;
 import com.leyou.pojo.SpuDetail;
 import com.leyou.pojo.Stock;
 import com.leyou.vo.SpuVo;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,6 +28,9 @@ public class SpuService {
     private SkuMapper skuMapper;
     @Autowired
     private StockMapper stockMapper;
+    //引入消息am
+    @Autowired
+    AmqpTemplate amqpTemplate;
 
     /**
      * 根据分页信息查询商品参数列表
@@ -97,10 +101,26 @@ public class SpuService {
             stock.setStock(sku.getStock());
             stockMapper.insert(stock);
         });
+        //调用发送消息的方法
+        this.sendMQ("insert",spu.getId());
     }
 
+    /**
+     * 发送MQ消息的方法
+     *
+     * @param type
+     * @param spuId
+     */
+    public void sendMQ(String type, Long spuId) {
+        System.out.println("进入调用");
+        //发送mq消息
+        amqpTemplate.convertAndSend("item.exchanges", "item."+type, spuId);
+        System.out.println("调用完成");
+    }
+
+
     public SpuDetail findSpuDetailBySpuId(Long id) {
-        return  spuDetailMapper.selectByPrimaryKey(id);
+        return spuDetailMapper.selectByPrimaryKey(id);
     }
 
     public void updateGoods(SpuVo spuVo) {
@@ -120,7 +140,7 @@ public class SpuService {
         spuDetailMapper.updateByPrimaryKeySelective(spuDetail);
 
         // 3: 修改sku表- - 先删除,后添加 以为一对多,如果对比修改,逻辑麻烦
-        List<Sku> skus =spuVo.getSkus();
+        List<Sku> skus = spuVo.getSkus();
         skus.forEach(sku -> {
             //或者对应spuID,然后逻辑删除对应spuID的所有sku
             sku.setEnable(false);
@@ -145,7 +165,9 @@ public class SpuService {
             stock.setStock(sku.getStock());
             stockMapper.insert(stock);
         });
-
+        //调用发送消息的方法
+        System.out.println(spuVo.getId()+"================");
+        this.sendMQ("update",spuVo.getId());
     }
 
     public void deleteById(Long spuId) {
@@ -184,6 +206,7 @@ public class SpuService {
         spu.setSaleable(saleable);
         spuMapper.updateByPrimaryKeySelective(spu);
     }
+
     /**
      * 根据spuId查询spu信息
      *
@@ -191,6 +214,10 @@ public class SpuService {
      * @return
      */
     public Spu findSpuBySpuId(Long spuId) {
-      return   spuMapper.selectByPrimaryKey(spuId);
+        return spuMapper.selectByPrimaryKey(spuId);
+    }
+
+    public SpuVo findSpuVoBySpuId(Long spuId) {
+       return spuVoMapper.findSpuVoBySpuId(spuId);
     }
 }
