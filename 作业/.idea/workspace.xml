@@ -548,12 +548,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/日报/6.9日报.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="374">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -591,10 +591,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="679" />
-    <option name="y" value="105" />
-    <option name="width" value="1148" />
-    <option name="height" value="649" />
+    <option name="x" value="384" />
+    <option name="y" value="97" />
+    <option name="width" value="692" />
+    <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -603,6 +603,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -619,7 +620,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -664,7 +664,8 @@
       <updated>1591744662370</updated>
       <workItem from="1591744663705" duration="104000" />
       <workItem from="1591866863327" duration="1353000" />
-      <workItem from="1591896307540" duration="28000" />
+      <workItem from="1591896307540" duration="84000" />
+      <workItem from="1591956320365" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="6.9日报">
       <created>1591744706065</created>
@@ -680,17 +681,24 @@
       <option name="project" value="LOCAL" />
       <updated>1591868598489</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="6.11日报">
+      <created>1591896361532</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591896361532</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1485000" />
+    <option name="totallyTimeSpent" value="1568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -728,13 +736,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="6.9日报" />
     <MESSAGE value="消息队列录音和6.9日报" />
-    <option name="LAST_COMMIT_MESSAGE" value="消息队列录音和6.9日报" />
+    <MESSAGE value="6.11日报" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.11日报" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/日报/6.9日报.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="374">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>

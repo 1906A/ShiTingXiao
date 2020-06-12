@@ -11,3 +11,8 @@
 ============================
 交换机写错了:Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'item.exchanges' in vhost '/', class-id=60, method-id=40)
 完成商品添加和修改的消息监听(还未解决bug)
+
+6.12日:
+
+=============================
+完成商品删除消息同步问题
