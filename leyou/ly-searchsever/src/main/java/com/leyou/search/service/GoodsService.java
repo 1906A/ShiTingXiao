@@ -149,4 +149,8 @@ public class GoodsService {
         //3:持久化es
         goodsRepository.save(goods);
     }
+
+    public void deleteEsData(Long spuId) {
+        goodsRepository.deleteById(spuId);
+    }
 }

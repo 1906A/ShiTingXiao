@@ -140,7 +140,7 @@ public class SpuService {
         spuDetailMapper.updateByPrimaryKeySelective(spuDetail);
 
         // 3: 修改sku表- - 先删除,后添加 以为一对多,如果对比修改,逻辑麻烦
-        List<Sku> skus = spuVo.getSkus();
+       /* List<Sku> skus = spuVo.getSkus();
         skus.forEach(sku -> {
             //或者对应spuID,然后逻辑删除对应spuID的所有sku
             sku.setEnable(false);
@@ -148,7 +148,13 @@ public class SpuService {
             //skuMapper.updateByExampleSelective(sku,spuVo.getId());
             //删除库存stock
             stockMapper.deleteByPrimaryKey(sku.getId());
-        });
+        });*/
+
+       List<Sku> skuList = skuMapper.findSkuBySpuId(spuVo.getId());
+       skuList.forEach(s->{
+           skuMapper.deleteByPrimaryKey(s.getId());
+           stockMapper.deleteByPrimaryKey(s.getId());
+       });
 
         //新增sku
         List<Sku> skus1 = spuVo.getSkus();
@@ -198,6 +204,9 @@ public class SpuService {
         spu.setValid(false);
         spu.setId(spuId);
         spuMapper.updateByPrimaryKeySelective(spu);
+
+        //发送删除商品消息的MQ
+        this.sendMQ("delete",spuId);
     }
 
     public void upOrDown(Boolean saleable, Long spuId) {
