@@ -524,7 +524,6 @@
       <change beforePath="$PROJECT_DIR$/../leyou-portal/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou-portal/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/日报/6.9日报.txt" beforeDir="false" afterPath="$PROJECT_DIR$/日报/6.9日报.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -548,17 +547,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/日报/6.9日报.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -628,6 +617,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -665,7 +660,7 @@
       <workItem from="1591744663705" duration="104000" />
       <workItem from="1591866863327" duration="1353000" />
       <workItem from="1591896307540" duration="84000" />
-      <workItem from="1591956320365" duration="27000" />
+      <workItem from="1591956320365" duration="675000" />
     </task>
     <task id="LOCAL-00001" summary="6.9日报">
       <created>1591744706065</created>
@@ -688,15 +683,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591896361532</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="6.12日报">
+      <created>1591956374536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591956374536</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1568000" />
+    <option name="totallyTimeSpent" value="2216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -737,13 +738,14 @@
     <MESSAGE value="6.9日报" />
     <MESSAGE value="消息队列录音和6.9日报" />
     <MESSAGE value="6.11日报" />
-    <option name="LAST_COMMIT_MESSAGE" value="6.11日报" />
+    <MESSAGE value="6.12日报" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.12日报" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/日报/6.9日报.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>
