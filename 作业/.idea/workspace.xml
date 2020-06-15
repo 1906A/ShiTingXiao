@@ -520,10 +520,13 @@
       <change afterPath="$PROJECT_DIR$/../vueDemo/node_modules/vue/src/shared/util.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../vueDemo/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../vueDemo/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/录音/6.15日-阿里短信接入简述.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/流程图/技术点.xmind" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou-portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou-portal/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou-portal/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/日报/6.9日报.txt" beforeDir="false" afterPath="$PROJECT_DIR$/日报/6.9日报.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -547,7 +550,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -599,11 +602,6 @@
             <path>
               <item name="作业" type="b2602c69:ProjectViewProjectNode" />
               <item name="作业" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业" type="b2602c69:ProjectViewProjectNode" />
-              <item name="作业" type="462c0819:PsiDirectoryNode" />
-              <item name="日报" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -661,6 +659,8 @@
       <workItem from="1591866863327" duration="1353000" />
       <workItem from="1591896307540" duration="84000" />
       <workItem from="1591956320365" duration="675000" />
+      <workItem from="1592142728896" duration="303000" />
+      <workItem from="1592211795043" duration="701000" />
     </task>
     <task id="LOCAL-00001" summary="6.9日报">
       <created>1591744706065</created>
@@ -690,16 +690,23 @@
       <option name="project" value="LOCAL" />
       <updated>1591956374536</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="流程图">
+      <created>1592142790174</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592142790174</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2216000" />
+    <option name="totallyTimeSpent" value="3220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26652452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -718,7 +725,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" visible="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -739,7 +746,8 @@
     <MESSAGE value="消息队列录音和6.9日报" />
     <MESSAGE value="6.11日报" />
     <MESSAGE value="6.12日报" />
-    <option name="LAST_COMMIT_MESSAGE" value="6.12日报" />
+    <MESSAGE value="流程图" />
+    <option name="LAST_COMMIT_MESSAGE" value="流程图" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/日报/6.9日报.txt">
