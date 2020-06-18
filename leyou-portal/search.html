@@ -195,7 +195,7 @@
                         <li class="yui3-u-1-5" v-for="(item,index) in goodsList">
                             <div class="list-wrap">
                                 <div class="p-img">
-                                    <a href="item.html" target="_blank"><img :src="item.selected.images" height="200"/></a>
+                                    <a :href="'item/'+item.id+'.html'" target="_blank"><img :src="item.selected.images" height="200"/></a>
                                     <ul class="skus">
                                         <li :class="{selected:item.selected.id == sku.id}" v-for="sku in item.skus"
                                             @click="item.selected=sku"><img :src="sku.images"></li>
@@ -417,6 +417,9 @@
                         //this.search.page=9;
                         this.totalPage = data.totalPage;
                         //获取categoryList  和 brandList
+
+                        //清空原来数据,防止多次存放
+                        this.filters = [];
                         this.filters.push({
                             key:"分类",
                             options:data.categoryList
