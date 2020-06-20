@@ -93,23 +93,11 @@ public class UserController {
     @GetMapping("/query")
     public User query(@RequestParam("username") String username,
                       @RequestParam("password") String password){
-        System.out.println("查询用户:"+username+"---------"+password);
-        return new User();
+        User user  = userService.query(username,password);
+        return user;
     }
 
-    /**
-     * 用户登陆
-     * @param username
-     * @param password
-     * @return
-     */
-    @PostMapping("/login")
-    public Boolean login(@RequestParam("username") String username,
-                      @RequestParam("password") String password){
-        Boolean result = userService.login(username,password);
-        System.out.println(result);
-        return result;
-    }
+
 
 
 }

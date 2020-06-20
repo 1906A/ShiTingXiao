@@ -62,8 +62,9 @@ public class UserService {
 
     }
 
-    public Boolean login(String username, String password) {
-        Boolean result = false;
+
+
+    public User query(String username, String password) {
         User user = new User();
         //1:根据用户名查询
         user.setUsername(username);
@@ -75,9 +76,9 @@ public class UserService {
             String psw = this.getPsw(password, salt);
             //判断 生成的 和 查询的是否一致
             if (psw.equals(user1.getPassword())){
-                return true;
+                return user1;
             }
         }
-        return result;
+       return null;
     }
 }
