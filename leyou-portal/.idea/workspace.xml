@@ -350,9 +350,6 @@
       <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/fdfs_client.conf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/src/main/java/org/csource/common/Base64.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/src/main/java/org/csource/common/IniFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/ly-api-gateway/src/main/java/com/leyou/config/FilterProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/ly-api-gateway/src/main/java/com/leyou/config/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/ly-api-gateway/src/main/java/com/leyou/filter/LoginFilter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../stu-tea-517/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../stu-tea-517/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../stu-tea-517/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
@@ -524,9 +521,8 @@
       <change afterPath="$PROJECT_DIR$/../vueDemo/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../vueDemo/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/ly-api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/ly-api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/success-cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/ly-goods-web/src/main/resources/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-goods-web/src/main/resources/templates/item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../作业/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../作业/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -552,7 +548,22 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="83" column="95" selection-start-line="83" selection-start-column="95" selection-end-line="83" selection-end-column="95" />
+              <folding>
+                <element signature="n#li#2;n#ul#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#3;n#ul#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -580,6 +591,8 @@
         <option value="$PROJECT_DIR$/item.html" />
         <option value="$PROJECT_DIR$/register.html" />
         <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/success-cart.html" />
+        <option value="$PROJECT_DIR$/cart.html" />
       </list>
     </option>
   </component>
@@ -604,9 +617,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="51" />
-    <option name="y" value="22" />
-    <option name="width" value="1093" />
+    <option name="x" value="966" />
+    <option name="width" value="906" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -615,7 +627,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -628,11 +639,18 @@
               <item name="leyou-portal" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="leyou-portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leyou-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -706,7 +724,10 @@
       <workItem from="1592446399598" duration="4112000" />
       <workItem from="1592552867413" duration="152000" />
       <workItem from="1592613841883" duration="1883000" />
-      <workItem from="1592631400298" duration="2196000" />
+      <workItem from="1592631400298" duration="3770000" />
+      <workItem from="1592701013495" duration="1813000" />
+      <workItem from="1592749509452" duration="1395000" />
+      <workItem from="1592832597177" duration="3700000" />
     </task>
     <task id="LOCAL-00001" summary="leyou前台创建">
       <created>1590762101071</created>
@@ -750,16 +771,24 @@
       <option name="project" value="LOCAL" />
       <updated>1592460279510</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="未登录下的购物车添加">
+      <created>1592658298948</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592658298948</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57869000" />
+    <option name="totallyTimeSpent" value="66351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.6602452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -776,7 +805,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4989339" weight="0.32742155" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.22017354" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.22017354" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.22125813" />
       <window_info anchor="bottom" id="Problems" order="12" weight="0.3287858" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -842,16 +871,14 @@
     <MESSAGE value="leyou前台分类品牌完成(6月3日)" />
     <MESSAGE value="leyou前台完成规格参数查询(6月4日)" />
     <MESSAGE value="登陆前台状态修改成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="登陆前台状态修改成功" />
+    <MESSAGE value="未登录下的购物车添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="未登录下的购物车添加" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pay.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/foot.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -902,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="118" column="41" lean-forward="true" selection-start-line="118" selection-start-column="41" selection-end-line="118" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1678">
@@ -924,6 +944,75 @@
             <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortcut.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pages/shortcut.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success-cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="49" column="76" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
+          <folding>
+            <element signature="n#div#1;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#li#6;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#li#7;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#7;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#li#6;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#li#7;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#7;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#1;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#2;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#3;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#4;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#5;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#6;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#7;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="83" column="95" selection-start-line="83" selection-start-column="95" selection-end-line="83" selection-end-column="95" />
+          <folding>
+            <element signature="n#li#2;n#ul#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#3;n#ul#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
