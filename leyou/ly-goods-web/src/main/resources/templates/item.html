@@ -660,12 +660,13 @@
 					let carts = ly.store.get("carts") || [];
 					let cart = carts.find(c => c.skuId === this.sku.id);
 
+					let selectedSku = {};
 					//2,判断是否存在
 					if (cart) {
-						//3,存在更新数量
+						//3,存在更新数量  修改数量
 						cart.num  = cart.num + this.num;
 
-						//selectedSku = cart;
+						selectedSku = cart;
 					}else {
 						//4, 不存在,新增
 						cart = {
@@ -678,12 +679,9 @@
 						}
 						carts.push(cart);
 					}
+					//把carts写回localstorage
 					ly.store.set("carts",carts);
-
-
-
-
-
+					ly.store.set("selectedSku",selectedSku);
 
 				} else {
 					alert("已登录")
