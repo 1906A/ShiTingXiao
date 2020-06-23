@@ -524,7 +524,6 @@
       <change beforePath="$PROJECT_DIR$/../leyou-portal/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou-portal/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/日报/6.9日报.txt" beforeDir="false" afterPath="$PROJECT_DIR$/日报/6.9日报.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -674,7 +673,7 @@
       <workItem from="1591956320365" duration="675000" />
       <workItem from="1592142728896" duration="303000" />
       <workItem from="1592211795043" duration="769000" />
-      <workItem from="1592323035246" duration="194000" />
+      <workItem from="1592323035246" duration="247000" />
     </task>
     <task id="LOCAL-00001" summary="6.9日报">
       <created>1591744706065</created>
@@ -718,15 +717,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592237151545</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完成录屏和流程图">
+      <created>1592323269551</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592323269551</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3482000" />
+    <option name="totallyTimeSpent" value="3535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26918977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -770,7 +775,8 @@
     <MESSAGE value="6.12日报" />
     <MESSAGE value="流程图" />
     <MESSAGE value="完成短信接入录音简述" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成短信接入录音简述" />
+    <MESSAGE value="完成录屏和流程图" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成录屏和流程图" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/日报/6.9日报.txt">
