@@ -43,7 +43,7 @@
 
                     <div class="cart-body">
                         <div class="cart-list">
-                            <ul class="goods-list yui3-g" v-for="cart in carts">
+                            <ul class="goods-list yui3-g" v-for="(cart,i) in carts">
                                 <li class="yui3-u-1-24">
                                     <input type="checkbox" name="" :value="cart" v-model="selected"/>
                                 </li>
@@ -70,7 +70,7 @@
                                 <li class="yui3-u-1-8"><span style="line-height:70px " class="sum">{{ly.formatPrice(cart.price*cart.num)}}</span>
                                 </li>
                                 <li class="yui3-u-1-8">
-                                    <a href="#none">删除</a><br/>
+                                    <a href="#none" @click="deleteCart(i)">删除</a><br/>
                                     <a href="#none">移到我的关注</a>
                                 </li>
                             </ul>
@@ -90,7 +90,7 @@
                     <a href="#none">清除下柜商品</a>
                 </div>
                 <div class="toolbar">
-                    <div class="chosed">已选择<span>0</span>件商品</div>
+                    <div class="chosed">已选择<span>{{selected.length}}</span>件商品</div>
                     <div class="sumprice">
                         <span><em>总价（不含运费） ：</em><i class="summoney">{{totalPrice}}</i></span>
                         <span><em>已节省：</em><i>-¥20.00</i></span>
@@ -275,6 +275,19 @@
             totalPrice:0
         },
         methods: {
+            deleteCart(i){
+                this.ly.http("/auth/verify")
+                    .then(resp =>{
+                        let user = resp.data;
+                        if (user.id != null){
+                            alert("登陆了")
+                        } else {
+                            //   alert("未登录")
+                            this.carts.splice(i,1);
+                            ly.store.set("carts",this.carts)
+                        }
+                    })
+            },
             selectAll() {
                 if (this.allSelect) {
                     this.selected = [];
@@ -287,14 +300,14 @@
                     cart.num--;
                 }
                 this.ly.http("/auth/verify")
-                    .then(resp =>{
-                        let user = resp.data;
-                        if (user.id != null){
-                            alert("登陆了")
-                        } else {
-                         //   alert("未登录")
-                            ly.store.set("carts",this.carts)
-                        }
+                                .then(resp =>{
+                                    let user = resp.data;
+                                    if (user.id != null){
+                                        alert("登陆了")
+                                    } else {
+                                        //   alert("未登录")
+                                        ly.store.set("carts",this.carts)
+                                    }
                     })
                 for (let i = 0; i<this.selected.length;i++){
                     if (this.selected.id == cart.id){
@@ -328,6 +341,7 @@
                     if (this.user.id == null) {
                         alert("未登录")
                         this.carts = ly.store.get("carts");
+                        this.selected=this.carts;
                     } else {
                         alert("已登录")
                         //已登录状态下加入购物车
