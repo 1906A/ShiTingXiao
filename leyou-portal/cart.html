@@ -284,17 +284,15 @@
                           //未登录,就去登录
                           //returnUrl 表示操作完成后返回到 什么页面
                           // location.href 表示上次操作的页面
-                          alert("结算时,未登录")
+                          //alert("结算时,未登录")
                           location.href="http://www.leyou.com/login.html?returnUrl="+location.href;
                       }else {
                           //已登录,携带当前选中商品,去结算页
                           // 思路1,把已选中商品先放入本地的local storage
                           // 思路2: 携带已选中商品的id, 去后台从redis中重新获取
-                          alert("结算时,已登录");
+                          //alert("结算时,已登录");
                           ly.store.set("js_selected",this.selected);
                           window.open("http://www.leyou.com/getOrderInfo.html",target="_blank");
-                          alert("111")
-
                       }
                   });
             },
@@ -304,14 +302,11 @@
                         let user = resp.data;
                         let id = cart.id;
                         if (user.id != null){
-                            alert("登陆了");
                             this.ly.http.post("/cart/delete?id="+id)
                                 .then(resp =>{
-
                                     window.location.reload();
                                 });
                         } else {
-                            //   alert("未登录")
                             this.carts.splice(i,1);
                             ly.store.set("carts",this.carts)
                         }
@@ -332,13 +327,10 @@
                                 .then(resp =>{
                                     let user = resp.data;
                                     if (user.id != null){
-                                        alert("登陆了");
                                         this.ly.http.post("/cart/update",cart)
                                             .then(resp =>{
-
                                             });
                                     } else {
-                                        //   alert("未登录")
                                         ly.store.set("carts",this.carts)
                                     }
                     })
@@ -354,14 +346,10 @@
                     .then(resp =>{
                         let user = resp.data;
                         if (user.id != null){
-                            alert("登陆了");
                             this.ly.http.post("/cart/update",cart)
                                 .then(resp =>{
-
                                 });
-
                         } else {
-                          //  alert("未登录")
                             ly.store.set("carts",this.carts)
                         }
                     })
