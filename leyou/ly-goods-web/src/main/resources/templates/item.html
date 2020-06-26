@@ -673,7 +673,7 @@
 							skuId:this.sku.id,
 							title:this.sku.title,
 							price:this.sku.price,
-							image: this.sku.images,
+							images: this.sku.images,
 							num: this.num,
 							ownSpec: this.sku.ownSpec
 						}
@@ -686,6 +686,15 @@
 				} else {
 					alert("已登录")
 					//已登录状态下加入购物车
+					//构造数据
+					this.sku.num = this.num;
+					let skuVo  = this.sku;
+					console.info(skuVo);
+					this.ly.http.post("/cart/add",skuVo)
+							.then(resp =>{
+								alert("购物车添加成功");
+
+							})
 				}
 					})
 			}
