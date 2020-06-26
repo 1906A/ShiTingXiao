@@ -49,7 +49,7 @@
                                 </li>
                                 <li class="yui3-u-11-24">
                                     <div class="good-item">
-                                        <div class="item-img"><img :src="cart.image" width="80px" height="80px"/>
+                                        <div class="item-img"><img :src="cart.images" width="80px" height="80px"/>
                                         </div>
                                         <div class="item-msg">
 												<span style="line-height:70px ">
@@ -96,7 +96,7 @@
                         <span><em>已节省：</em><i>-¥20.00</i></span>
                     </div>
                     <div class="sumbtn">
-                        <a class="sum-btn" href="getOrderInfo.html" target="_blank">结算</a>
+                        <a class="sum-btn"  @click="toPay" >结算</a>
                     </div>
                 </div>
             </div>
@@ -272,15 +272,44 @@
             carts: [],
             selected: [],
             allSelect: true,
-            totalPrice:0
+            totalPrice:0,
         },
         methods: {
-            deleteCart(i){
+            toPay(){
+              //判断用户是否登录
+              this.ly.http("/auth/verify")
+                  .then(resp =>{
+                      this.user = resp.data;
+                      if (this.user.id == null){
+                          //未登录,就去登录
+                          //returnUrl 表示操作完成后返回到 什么页面
+                          // location.href 表示上次操作的页面
+                          alert("结算时,未登录")
+                          location.href="http://www.leyou.com/login.html?returnUrl="+location.href;
+                      }else {
+                          //已登录,携带当前选中商品,去结算页
+                          // 思路1,把已选中商品先放入本地的local storage
+                          // 思路2: 携带已选中商品的id, 去后台从redis中重新获取
+                          alert("结算时,已登录");
+                          ly.store.set("js_selected",this.selected);
+                          window.open("http://www.leyou.com/getOrderInfo.html",target="_blank");
+                          alert("111")
+
+                      }
+                  });
+            },
+            deleteCart(cart,i){
                 this.ly.http("/auth/verify")
                     .then(resp =>{
                         let user = resp.data;
+                        let id = cart.id;
                         if (user.id != null){
-                            alert("登陆了")
+                            alert("登陆了");
+                            this.ly.http.post("/cart/delete?id="+id)
+                                .then(resp =>{
+
+                                    window.location.reload();
+                                });
                         } else {
                             //   alert("未登录")
                             this.carts.splice(i,1);
@@ -303,7 +332,11 @@
                                 .then(resp =>{
                                     let user = resp.data;
                                     if (user.id != null){
-                                        alert("登陆了")
+                                        alert("登陆了");
+                                        this.ly.http.post("/cart/update",cart)
+                                            .then(resp =>{
+
+                                            });
                                     } else {
                                         //   alert("未登录")
                                         ly.store.set("carts",this.carts)
@@ -321,7 +354,12 @@
                     .then(resp =>{
                         let user = resp.data;
                         if (user.id != null){
-                            alert("登陆了")
+                            alert("登陆了");
+                            this.ly.http.post("/cart/update",cart)
+                                .then(resp =>{
+
+                                });
+
                         } else {
                           //  alert("未登录")
                             ly.store.set("carts",this.carts)
@@ -345,6 +383,13 @@
                     } else {
                         alert("已登录")
                         //已登录状态下加入购物车
+                        this.ly.http.post("/cart/query")
+                            .then(resp => {
+                                alert("购物车添加成功");
+                                this.carts = resp.data;
+                                this.selected=this.carts;
+                               // this.ownSpec = Object.values(JSON.parse(this.selectedSku.ownSpec)).join("/");
+                            });
                     }
                 })
         },
