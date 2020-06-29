@@ -350,6 +350,8 @@
       <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/fdfs_client.conf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/src/main/java/org/csource/common/Base64.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../fastdfs-client-java-master/src/main/java/org/csource/common/IniFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-cart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-cart/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../stu-tea-517/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../stu-tea-517/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../stu-tea-517/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
@@ -521,8 +523,8 @@
       <change afterPath="$PROJECT_DIR$/../vueDemo/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../vueDemo/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou-portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou-portal/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou-portal/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou-portal/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -547,7 +549,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/日报/6.9日报.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -589,9 +591,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="384" />
-    <option name="y" value="97" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="173" />
+    <option name="y" value="61" />
     <option name="width" value="692" />
     <option name="height" value="867" />
   </component>
@@ -601,7 +603,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -619,6 +620,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -626,7 +628,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/录音" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -674,6 +676,7 @@
       <workItem from="1592142728896" duration="303000" />
       <workItem from="1592211795043" duration="769000" />
       <workItem from="1592323035246" duration="247000" />
+      <workItem from="1592876669923" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="6.9日报">
       <created>1591744706065</created>
@@ -724,16 +727,23 @@
       <option name="project" value="LOCAL" />
       <updated>1592323269551</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加购物车">
+      <created>1592876694849</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592876694849</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3535000" />
+    <option name="totallyTimeSpent" value="3581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26918977" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.271855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -776,7 +786,8 @@
     <MESSAGE value="流程图" />
     <MESSAGE value="完成短信接入录音简述" />
     <MESSAGE value="完成录屏和流程图" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成录屏和流程图" />
+    <MESSAGE value="添加购物车" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加购物车" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/日报/6.9日报.txt">
